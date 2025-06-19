@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🎮 Piedra, Papel o Tijera</h1>
+        
+        <div class="score-board">
+            <div class="score">
+                <div>Jugador</div>
+                <div id="player-score">0</div>
+            </div>
+            <div class="score">
+                <div>Computadora</div>
+                <div id="computer-score">0</div>
+            </div>
+        </div>
+
+        <div class="game-area">
+            <div class="choices-display">
+                <div class="choice-display">
+                    <div class="choice-icon" id="player-choice">❓</div>
+                    <div>Tú</div>
+                </div>
+                <div class="vs">VS</div>
+                <div class="choice-display">
+                    <div class="choice-icon" id="computer-choice">❓</div>
+                    <div>PC</div>
+                </div>
+            </div>
+
+            <div class="result" id="result">¡Elige tu jugada!</div>
+
+            <div class="choices-buttons">
+                <button class="choice-btn" onclick="playGame('rock')" title="Piedra">🗿</button>
+                <button class="choice-btn" onclick="playGame('paper')" title="Papel">📄</button>
+                <button class="choice-btn" onclick="playGame('scissors')" title="Tijera">✂️</button>
+            </div>
+
+            <button class="reset-btn" onclick="resetGame()">🔄 Reiniciar Juego</button>
+        </div>
+
+        <div class="footer">
+            Hecho por <a href="https://mi-portfolio-omega-cyan.vercel.app/" target="_blank">Edgar Meroño</a> © 2025
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
